@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="calculator-screen"></div>
+  <P>
+    <button class="calcButton">C</button>
+    <button class="calcButton">*/-</button>
+    <button class="calcButton">%</button>
+    <button class="calcButton operator">/</button>
+  </P>
+  <P>
+    <button class="calcButton number" onclick="
+      onclickFun('7');
+      ">7</button>
+    <button class="calcButton number" onclick="
+      onclickFun('8');
+      ">8</button>
+    <button class="calcButton number" onclick="
+      onclickFun('9');
+      ">9</button>
+    <button class="calcButton operator">x</button>
+  </P>
+  <P>
+    <button class="calcButton number" onclick="
+      onclickFun('4');
+      ">4</button>
+    <button class="calcButton number" onclick="
+      onclickFun('5');
+      ">5</button>
+    <button class="calcButton number" onclick="
+      onclickFun('6');
+      ">6</button>
+    <button class="calcButton operator" onclick="
+      onclickFun('-');
+      ">-</button>
+  </P>
+  <p>
+    <button class="calcButton number" onclick="
+      onclickFun('1');
+      ">1</button>
+    <button class="calcButton number" onclick="
+      onclickFun('2');
+      ">2</button>
+    <button class="calcButton number" onclick="
+      onclickFun('3');
+      ">3</button>
+    <button class="calcButton operator" onclick="
+      onclickFun('+');
+      ">+</button>
+  </p>
+  <P>
+    <button class="calcButton number zero" onclick="
+      onclickFun('0');
+      ">0</button>
+    <button class="calcButton number" onclick="
+      onclickFun('.')
+      ">.</button>
+    <button class="calcButton operator" onclick="
+      console.log(eval(calculation));
+      ">=</button>
+  </P>
+  
+  <script>
+    let calculation = '';
+
+    function onclickFun(number) {
+      calculation += number
+      console.log(calculation);
+         
+    }
+
+  </script>
+</body>
+</html>

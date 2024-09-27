@@ -1,0 +1,31 @@
+body{
+  font-family: Arial;
+  background-color: black;
+  width: 50%;
+  height: auto;
+  margin-left: 20vh;
+  margin-top: 20vh;
+}
+
+.calcButton {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.number {
+  background-color: rgb(102, 102, 102);
+  color: white;
+}
+
+.operator {
+  background-color: rgb(238, 161, 17);
+  color: white;
+}
+
+.zero {
+  padding-right:70px;
+  padding-left: 15px;
+}
